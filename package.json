@@ -15,9 +15,12 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "axios": "latest",
     "nuxt": "^2.0.0",
     "sass": "^1.23.1",
-    "sass-loader": "^8.0.0"
+    "sass-loader": "^8.0.0",
+    "vue-m-message": "^2.0.0",
+    "vue": "latest"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

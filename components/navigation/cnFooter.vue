@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 #cnFooter {
-  padding: 20px 0;
+  height: 50px;
 
   .container {
     border-top: solid 1px gray;

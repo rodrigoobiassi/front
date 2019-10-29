@@ -17,6 +17,7 @@ export default {
   css: [
   ],
   plugins: [
+    { src: '~/plugins/toast', ssr: false }
   ],
   buildModules: [
     '@nuxtjs/eslint-module'

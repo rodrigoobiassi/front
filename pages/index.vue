@@ -2,12 +2,53 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
-        cep_ninja
-      </h1>
-      <h2 class="subtitle">
-        A API de ceps mais veloz do mundo!
-      </h2>
+
+      <div class="columns">
+        <div class="column code-highlight">
+          <h4>JSON</h4>
+          <div class="code-url">
+            <span class="tag is-success">GET</span>
+            <code>http://api.cep.ninja/ws/01310916/json</code>
+          </div>
+
+          <div class="code-response">
+            <span class="tag is-dark">RESPONSE</span>
+            <code>
+              {
+              "cep": "01310916",
+              "localidade": "São Paulo",
+              "uf": "SP",
+              "bairro": "Bela Vista",
+              "logradouro": "Avenida Paulista, 1374 ",
+              "referencia2": " Brazilian Finance Center"
+              }
+            </code>
+          </div>
+        </div>
+
+        <div class="column code-highlight">
+          <h4>XML</h4>
+          <div class="code-url">
+            <span class="tag is-success">GET</span>
+            <code>http://api.cep.ninja/ws/01310916/xml</code>
+          </div>
+
+          <div class="code-response">
+            <span class="tag is-dark">RESPONSE</span>
+            <code>
+              <xmlcep>
+                <cep>01310916</cep>
+                <localidade>São Paulo</localidade>
+                <uf>SP</uf>
+                <bairro>Bela Vista</bairro>
+                <logradouro>Avenida Paulista, 1374 </logradouro>
+                <referencia2> Brazilian Finance Center</referencia2>
+              </xmlcep>
+            </code>
+          </div>
+        </div>
+      </div>
+
       <div class="links">
         <a href="#" target="_blank" class="button is-outlined">Docs</a>
         <a href="https://github.com/renatoruis/cep.ninja/" target="_blank" class="button is-primary is-outlined">GitHub</a>
@@ -21,9 +62,7 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
-  }
+  components: { Logo }
 }
 </script>
 
@@ -36,22 +75,35 @@ export default {
   align-items: center;
   text-align: center;
 
-  .title {
-    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    display: block;
-    font-weight: 300;
-    font-size: 100px;
-    color: #35495e;
-    letter-spacing: 1px;
-  }
+  .code-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
-  .subtitle {
-    font-weight: 300;
-    font-size: 42px;
-    color: #526488;
-    word-spacing: 5px;
-    padding-bottom: 15px;
+    h4 {
+      background: #e31c3a;
+      color: #FFFFFF;
+      font-weight: 700;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .code-url {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .code-response {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 20px;
+
+      span {
+        max-width: 100px;
+      }
+    }
   }
 
   .links {

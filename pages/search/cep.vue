@@ -31,7 +31,8 @@
 </template>
 
 <script>
-import Logo from '../components/Logo'
+import Logo from '../../components/Logo'
+import { Address } from '../../services'
 
 export default {
   name: 'Search',
