@@ -1,7 +1,7 @@
 <template>
   <div>
     <cn-header />
-    <nuxt />
+    <nuxt class="content-body" />
     <cn-footer />
   </div>
 </template>
@@ -17,4 +17,8 @@ export default {
 
 <style lang="scss">
   @import "../assets/styles/_main.scss";
+
+  .content-body {
+    min-height: calc(100vh - 100px);
+  }
 </style>
