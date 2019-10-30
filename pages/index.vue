@@ -8,7 +8,7 @@
           <h4>JSON</h4>
           <div class="code-url">
             <span class="tag is-success">GET</span>
-            <code>http://api.cep.ninja/ws/01310916/json</code>
+            <code>https://api.cep.ninja/ws/01310916/json</code>
           </div>
 
           <div class="code-response">
@@ -30,7 +30,7 @@
           <h4>XML</h4>
           <div class="code-url">
             <span class="tag is-success">GET</span>
-            <code>http://api.cep.ninja/ws/01310916/xml</code>
+            <code>https://api.cep.ninja/ws/01310916/xml</code>
           </div>
 
           <div class="code-response">

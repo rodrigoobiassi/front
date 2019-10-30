@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export class Address {
-  static DOMAIN = 'http://api.cep.ninja/ws';
+  static DOMAIN = 'https://api.cep.ninja/ws';
 
   static getCep (cep) {
     const url = `${Address.DOMAIN}/${cep}/json`

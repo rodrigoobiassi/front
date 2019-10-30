@@ -54,9 +54,9 @@ export default {
       /**
        * @TODO
        * Precisa colocar o Axios
-       * Colocar o endere;o como variável de ambiente <http://api.cep.ninja>
+       * Colocar o endere;o como variável de ambiente <https://api.cep.ninja>
        */
-      fetch(`http://api.cep.ninja/ws/json?q=${this.query}&page=${this.page}&limit=${this.limit}`)
+      fetch(`https://api.cep.ninja/ws/json?q=${this.query}&page=${this.page}&limit=${this.limit}`)
         .then(response => response.json())
         .then((results) => {
           this.results = results
