@@ -1,6 +1,8 @@
-# cep_ninja
+# CEP NINJA
 
 > A API de ceps mais veloz do mundo!
+
+[![Build Status](https://travis-ci.org/cepninja/front.svg?branch=master)](https://travis-ci.org/cepninja/front)
 
 ## Build Setup
 
