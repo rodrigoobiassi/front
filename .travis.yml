@@ -9,6 +9,17 @@ services:
 
 language: node_js
 
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - yarn install
+
+script:
+  - yarn build
+
 deploy:
   provider: gae
   keyfile: "cep-ninja-54574641e0d1.json"
