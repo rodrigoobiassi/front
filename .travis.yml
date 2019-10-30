@@ -11,7 +11,7 @@ language: node_js
 node_js:
   - "11"
   - "12"
-  
+
 cache:
   yarn: true
   directories:
@@ -27,4 +27,4 @@ deploy:
   provider: gae
   keyfile: "cep-ninja-54574641e0d1.json"
   project: "cep-ninja"
-  on: production
+  on: master
