@@ -51,8 +51,8 @@
 
       <div class="links">
         <a href="#" target="_blank" class="button is-outlined">Docs</a>
-        <a href="https://github.com/renatoruis/cep.ninja/" target="_blank" class="button is-primary is-outlined">GitHub</a>
-        <a href="https://github.com/renatoruis/cep.ninja/" target="_blank" class="button is-link is-outlined">Doe</a>
+        <a href="https://github.com/cepninja" target="_blank" class="button is-primary is-outlined">GitHub</a>
+        <a href="https://github.com/cepninja" target="_blank" class="button is-link is-outlined">Doe</a>
       </div>
     </div>
   </div>
