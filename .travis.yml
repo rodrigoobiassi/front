@@ -2,6 +2,13 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_4efdbe0d8830_key -iv $encrypted_4efdbe0d8830_iv
   -in cep-ninja-54574641e0d1.json.enc -out cep-ninja-54574641e0d1.json -d
 
+sudo: required
+
+services:
+  - docker
+
+language: node_js
+
 deploy:
   provider: gae
   keyfile: "cep-ninja-54574641e0d1.json"
